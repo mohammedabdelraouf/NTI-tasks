@@ -1,0 +1,78 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+
+/* global */
+
+body{
+    background-color: aqua;
+}
+
+section{
+    box-sizing: border-box;
+    width: 50%;
+    display: inline-block;
+   
+}
+
+.container{
+    padding: 10%;
+    padding-top: 5%;
+    padding-left: 15%;
+    margin-top: 0%;
+}
+
+.text-style{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.text-style2{
+    font-size: 20px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input,textarea{
+
+    width: 100%;
+    border-radius: 3px;
+    padding: 2%;
+    margin: 1% 0%;
+    border: 0;
+    background-color: white;
+    box-sizing: border-box;
+
+}
+
+p{
+    text-decoration: solid;
+    font-size: 16 !important;
+}
+/*custom*/
+
+#phone , #company{
+    width: 49.5%;
+    margin: auto;
+}
+
+#submit{
+    background-color: rgb(255, 196, 0);
+    width: 30%;
+    display: block;
+    margin-left: auto;
+}
+#right-section
+{
+    position: absolute;
+    padding-top: 5%;
+}
+ul{
+    padding-left: 10%;
+}
+h1{
+
+    text-align: center;
+    padding-top: 5%;    
+}

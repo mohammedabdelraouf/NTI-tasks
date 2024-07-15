@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+        <Style>
+            input{
+
+                margin-bottom: 20px;
+                display: inline-block;
+                font-size: 16;
+                
+            }
+            label{
+
+                display: inline-block;
+                width: 200px;
+            }
+
+           body{
+            font-size: 20px;
+           }
+                
+            
+        </Style>
+    </head>
+    <body style="background-color:antiquewhite;" >
+
+        <!-- <div style="align-content: center;">
+            <h1 style="">my first table</h1>
+        </div>
+        <TAble border="3" style="font-size: 20px; width: 30%; height: 70%;">
+            <tbody>
+                <tr>
+                    <td>col1</td>
+                    <td rowspan="2">col2</td>
+                    <td rowspan="2" colspan="2">col3</td>
+                </tr>
+                <tr>
+                    <td>col1</td>
+                </tr>
+                <tr>
+                    <td>col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                    <td>col4</td>
+                </tr>
+                <tr>
+                    <td>col1</td>
+                    <td colspan="3">col2</td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2">col1</td>
+                    <td>col2</td>
+                    <td>col3</td>
+                    <td>col4</td>
+                </tr>
+                <tr>
+                    <td>col2</td>
+                    <td colspan="2">col4</td>
+                </tr>
+                <tr>
+                    <td colspan="4"><Span style="padding: 35%;">end of table</Span></td>
+                </tr>
+            </tbody>
+        </TAble> -->
+
+        <section  style="background-color: rgba(0, 0, 0, 0.6); width:50%; margin-left: 25%; " >
+            <h2 style="margin-left: 30%;">registeration form</h2>
+            <form style="margin-left: 30%;">
+                <Label for="firstName">first name</Label>
+                <input type="text" id="firstName" name="firstName" placeholder="Enter your first Name"  minlength="3" maxlength="10" autofocus required>
+                <br>
+                <Label for="lastName"> last name</Label>
+                <input type="text" id="lastName" name="lastName" placeholder="Enter your name"  minlength="3" maxlength="10" required>
+                <br>
+                <Label for="email">email</Label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" 
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+
+                <br>
+                <Label for="password_">Password</Label>
+                <input type="password" id="password_" placeholder="Enter a password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <br>
+                <Label>confirm password</Label>
+                <input type="password" placeholder="confirm your password">
+                <br>
+                <Label>date Of Birth</Label>
+                <input type="date" name="dateOfBirth" placeholder="Enter your name" required>
+
+                <br>
+                <Label>Gender</Label>
+                <span><input type="radio" name="gender" value="male" required>Male     </span>
+                <span><input type="radio" name="gender" value="Female">Female   </span>
+                
+                <br>
+                <Label>Mobile</Label>
+                <input type="text" pattern="01+[0-9]{9}"> 
+                <br>
+                <Label>Address</Label>
+                <textarea placeholder="Enter Your Address"></textarea>
+
+                <!-- <select name="hello" aria-required="true">
+                    <option disabled selected value="null"> choose </option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                </select> -->
+                <br>
+                <input type="submit" value="register" style="margin-top: 20px; margin-left: 30%;">
+            </form>
+        </section>
+    </body>
+</html>

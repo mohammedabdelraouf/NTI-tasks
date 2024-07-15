@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body >
+    <h1 class="text-style">CONTACT FORM</h1>   
+    <section class="text-style">
+        <div class="container">
+            <form method="post" action="/message" target="_parent">  
+                <input type="text" name="firstName" id="firstName" placeholder="Your Name">
+                <input type="email" name="email" id="email" 
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Your Email Address" required>
+                <input type="text" name="company" id="company" placeholder="COMPANY">
+
+                <input type="text" name="phone" id="phone"  pattern="01+[0-9]{9}" placeholder=" PHONE">
+
+                <textarea name="Message" id="Message" rows="6"  placeholder="Your Message"></textarea>
+
+                <input type="submit" id="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
+    <section class=""  id="right-section">
+        <div class="container ">
+            <h2 class="text-style">YOU &nbsp; CAN &nbsp; FIND &nbsp; US &nbsp; HERE</h2>
+            <p class="text-style2">
+                sample address ,sample street , 123/45
+                or on <a href="">maps</a>
+                <br>
+                <br>
+                <ul class="text-style2">
+                    <li>01021550911</li>
+                    <li>01557643211</li>
+                </ul>
+            </p>
+        </div>
+
+    </section>
+
+</body>
+</html>
