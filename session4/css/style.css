@@ -56,8 +56,8 @@ background-color: rgb(230, 230, 230);
     margin: 8% 3%;
 }
 .card-hr{
-    width: 40px;
-    margin: 1% 0px;
+    width: 35px;
+    margin: 3% 0px;
     border: 3px solid black;
 
 }
@@ -67,19 +67,28 @@ background-color: rgb(230, 230, 230);
 .position-relative{
     position: relative;
 }
+.custom-margin-h{
+    margin: 0% 2%;
+}
+.d-inline{
+    display:  inline;
+}
 /* custom */
-.card-img span{
+.card .card-img span{
     left: 8%;
     top:75%;
     font-size: 18px;
     font-weight: bold;
     visibility: hidden;
+    color: white;
+    z-index: 3;
 }
-.card-header span{
+.card .card-header p{
     font-size: 14;
     font-weight: bold;
     margin-right: 5% ;
-
+    display: inline;
+    color: black;
 }
 .card-header{
     box-shadow:0px 0px 3px 0px gray;
@@ -98,4 +107,7 @@ background-color: rgb(230, 230, 230);
 }
 .card:hover .overlay , .card:hover .card-img span{
     visibility: visible;
+}
+.card-header span:hover{
+    color: rgb(0, 4, 255);
 }
