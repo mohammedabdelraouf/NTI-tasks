@@ -7,8 +7,15 @@
 html{
     scroll-behavior: smooth;
 }
+
 /*global*/
 
+.position-absolute{
+    position: absolute;
+}
+.position-relative{
+    position: relative;
+}
 .bg-color{
     background-color: beige;
 }
@@ -26,7 +33,7 @@ html{
 .bg-orange{
     background-color: rgb(255, 155, 81);
 }
-.bg-transport{
+.overlay{
    background-color: rgba(0, 0, 0, 0.6); 
    margin-top: 0%;
 }
@@ -116,42 +123,34 @@ html{
 .white-bottom-border{
     border-bottom: 2px solid white;
 }
-
+.font2{
+    font-family: Arial Narrow,Arial,sans-serif; 
+    font-size: 26px;
+}
 .clear{
     clear: both;
 }
-/*custom*/
-
+input{
+    width: 100%;
+    padding :10% 2% 2% 2%; 
+    border: 0px ;
+    margin-bottom:1% ;
+    border-bottom: 1px solid lightgray;
+    font-size: 18px;
+}
 h1{
     margin-bottom: 5px;
     font-size: 56px;
 } 
-
-nav a{
-    color: white;
-    text-decoration: none;
-}
-nav ul{
-    width: 50%;
-}
-nav li{
-    list-style: none;
-    margin-left: 6%;
-    font-size: 12px;
-    font-family: Arial, Helvetica, sans-serif;
+hr{
+    width:45px;
+    border: 2px solid;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 span{
     color: rgb(255, 155, 81);
     font-weight: 100;
-}
-
-.card img{
-    width: 100%;
-    border-radius: 5px;
-}
-
-.card .caption{
-    padding: 1% 10%;
 }
 
 .card a{
@@ -166,13 +165,42 @@ span{
     text-align: center;
     border-radius: 3px;
 }
+
+.card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card .caption{
+    padding: 1% 10%;
+}
+
+
+
+
+/*custom*/
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    width: 31%;
+}
+nav li{
+    list-style: none;
+    margin-left: 6%;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #home-section{
     background-image: url(../imges/Glass.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100% ;
     
 }
-
 section#home-section form{
 
     width: 30%;
@@ -180,14 +208,7 @@ section#home-section form{
     border-radius: 5px;
     
 }
-input{
-    width: 100%;
-    padding :10% 2% 2% 2%; 
-    border: 0px ;
-    margin-bottom:1% ;
-    border-bottom: 1px solid lightgray;
-    font-size: 18px;
-}
+
 form div{
     border-top-left-radius:3px ;
     border-top-right-radius:3px ;
@@ -205,12 +226,7 @@ form input[type="submit"]{
     background-color: rgba(0, 0, 0,0);
     border: 1px solid white;
 }
-hr{
-    width:45px;
-    border: 1px solid;
-    margin-top: 3px;
-    margin-bottom: 3px;
-}
+
 .custom-container2{
 
     width: 25%;
@@ -245,10 +261,7 @@ li button{
     margin-left: -10%;
     width:35%
 }
-.font2{
-    font-family: Arial Narrow,Arial,sans-serif; 
-    font-size: 26px;
-}
+
 #services .card{
     width: 25%;
     box-shadow:none;
@@ -257,43 +270,91 @@ li button{
     margin:10px auto;
 
 }
-.pricing-table {
+#Pricing .card{
+    box-shadow: none;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    width: 300px;
 }
 .pricing-header {
-    background-color: #333;
+    background-color: #333333;
     color: white;
-    padding: 20px 0;
 }
-.pricing-header h1 {
-    margin: 0;
-    font-size: 24px;
+.pricing-header h2 {
+   border-bottom: 1px solid rgb(227, 223, 223);
+   padding: 3% 0%;
 }
+.pricing-header p{
+    padding: 3% 0%;
+    border-bottom: 5px solid rgb(255, 155, 81);
+ }
 .pricing-header .price {
-    font-size: 36px;
-    margin: 10px 0;
-    border-bottom:5px solid orange ;
+  font-size: 56px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  margin: 6% 1% 2% 1%;
 }
-.pricing-body {
-    padding: 20px;
+.pricing-header .price sub{
+
+font-size: 30px;
 }
+
 .pricing-body ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    width: 100%;
+    color: rgb(150, 150 , 150);
 }
 .pricing-body ul li {
-    padding: 10px 0;
-    border-top: 1px solid #ddd;
+   border-bottom: 1px solid rgb(227, 223, 223);
+   margin-top: 3%;
+   padding: 3% 0%;
+}
+.pricing-body ul li:first-child{
+    margin-top: 0%;
+ }
+
+#mid-card {
+    margin: 5% 3%;
+}
+#mid-card p{
+    padding: 3% 0%;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
 }
 
-#Pricing .card{
-border-radius: 0px;
-padding: 0px;
+#Reviews{
+    /* text-align: center; */
+}
+#Reviews hr{
+    margin: auto;
 }
 
+#Reviews .card{
+    box-shadow: none;
+    width: 20%;
+    text-align: left;
+    margin: 5% 0%;
+
+}
+.review p{
+ margin: 10% 3%;
+ padding: 4% 2%;
+ border-radius: 3px;
+}
+.reviewer-info{
+    padding: 10% 0%;
+    margin: 5% 0%;
+
+}
+.reviewer-info div{
+    top: 20px;
+    left: 40%;
+
+}
+
+img.img-icon{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+    top:0%;
+    left: 5% ;
+    z-index: 8;
+    border: 3px solid white;
+}
