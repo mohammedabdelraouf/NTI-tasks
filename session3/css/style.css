@@ -276,11 +276,40 @@ li button{
     width:35%
 }
 
+#sub-list-section i{
+    position: absolute;
+    top: 24%;
+    left: 0%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.7;
+}
+#sub-list-section .padding-left{
+
+    padding-left: 60px;
+}
 #services .card{
     width: 25%;
     box-shadow:none;
+    margin-top: 5%;
+    margin-bottom:5%;
+    
 }
 
+#services i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid orange;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 2%;
+}
 #Pricing .card{
     box-shadow: none;
     background-color: white;
