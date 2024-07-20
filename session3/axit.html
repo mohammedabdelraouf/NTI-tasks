@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AXIT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="imges/AXIT-1-transformed.webp">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -43,7 +45,7 @@
                     <p class="f-custom-font1 custom-margin-bottom">Lorem ipsum dolor sit, amet consectetur  
                     elit. Dolorum similique accusamus voluptate pariatur
                     nam omnis tempora,enim esse, numquam harum culpa doloribus neq.</p>
-                    <button class="bg-transport" id="Dbtn"><span class="text-white ">Download</span></button>
+                    <button class="bg-transport Dbtn" id="Dbtn"><span class="text-white ">Download</span></button>
                 </div>
     
                 <form class="text-white bg-white d-inline-block float-right custom-margin">
@@ -68,10 +70,17 @@
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut tenetur dolor repellendus voluptate, aperiam dolorum blanditiis!</p>
             </div>
             <div class="inner-container d-inline-block float-right">
-                <span>icon1 </span>
-                <span>icon2 </span>
-                <span>icon3 </span>
-                <span>icon4 </span>
+                <div class="icons">
+                    <a href="www.facebook.com"> 
+                        <i class="fa-brands fa-facebook-f text-gray"></i></a>
+                    <a href="www.twitter.com"> 
+                        <i class="fa-brands fa-twitter text-gray"></i></a>
+                    <a href="www.google.com"> 
+                        <i class="fa-brands fa-google-plus text-gray"></i></a>
+                    <a href="www.instagram.com"> 
+                        <i class="fa-brands fa-instagram text-gray"></i>
+                    </a>
+                </div>
             </div>
         </div>    
     </section>
@@ -97,34 +106,36 @@
         </div>
     </section>
     <section id="sub-list-section" class="bg-white">
-
         <div class="container">
-            <div class="card  custom-margin-bottom  custom-margin-top d-inline-block">
-                <img src="imges/section3-img.png" alt="">
-            </div>
-            <div class="inner-container float-right custom-margin-top">
+            <!-- <div class="d-inline-block">
+                
+            </div> -->
+            <img src="imges/section3-img.png" alt="" class="custom-img">
+            <div class="inner-container  float-right">
                 <h3 class="text-black f-custom-font1 ">Sub list section</h3>
                 <hr class="text-orange">
                 <p class="text-gray f-custom-font1 line-hight custom-margin-bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia expedita quod atque amet 
                     dolores voluptatibus cumque maiores inventore, natus assumenda! Corrupti.</p>
-                 
-                
-                    <ul class="float-right custom-margin">
-                        <li class="float-right">
+                <ul class="float-right ">
+                    <li class="float-right">
+                        <i class="fa-solid fa-cloud-arrow-up d-inline-block" ></i>
+                        <div class="d-inline-block">
                             <h4>Title</h4>
                             <p class="line-hight custom-margin-bottom">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                                 Perferendis, sint dignissimos.</p>
+                        </div>
 
-                        </li>
-                        <li>
-                            <h4>Title</h4>
-                            <p class="line-hight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                                Perferendis, sint dignissimos.</p>
 
-                        </li>
-                    </ul>
-                
+                    </li>
+                    <li>
+                        <h4>Title</h4>
+                        <p class="line-hight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Perferendis, sint dignissimos.</p>
+
+                    </li>
+                </ul>
             </div>
+            <div class="clear"></div>
         </div>
 
     </section>
@@ -141,10 +152,7 @@
                 <p class="text-gray custom-margin-bottom custom-padding-bottom">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, adipisci.</p>  
             </div>
-            <div class="card  custom-margin-bottom  custom-margin-top float-right">
-                <img src="imges/section3-img.png" alt="">
-            </div>
-            
+            <img src="imges/section3-img.png" alt="" class="float-right custom-img">
             <div class="clear"></div>
             
         </div>
@@ -153,7 +161,7 @@
         <div class="container text-center">
         
             <h3 class="f-custom-font1 custom-padding-bottom custom-margin-top font2">why this is awesome</h3>
-            <hr class="text-orange">
+            <hr class="text-orange margin-auto">
             <p class="text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
            
                 <div class="card">
@@ -178,7 +186,7 @@
     <section id="Pricing" class="bg-gray">
         <div class="container text-center">
             <h3 class="f-custom-font1 custom-padding-bottom custom-margin-top font2">Pricing options</h3>
-            <hr class="text-orange">
+            <hr class="text-orange margin-auto">
             <p class="text-gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="card">
                 <div class="pricing-header">
@@ -239,10 +247,10 @@
     </section>
     <section id="Reviews" class="bg-white">
         <h2 class="text-center">what our customer saying</h2>
-        <hr class="text-orange">
+        <hr class="text-orange margin-auto">
         <p class="text-gray text-center">Lorem ipsum dolor sit amet consectetur.</p>
         
-        <div class="container">
+        <div class="container text-center">
             <div class="card position-relative">
                 <div class="review">
                     <p class="text-gray bg-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
@@ -260,7 +268,7 @@
                     
                 </div>
             </div>
-            <div class="card position-relative">
+            <div class="card position-relative mid-card">
                 <div class="review">
                     <p class="text-gray bg-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                         Optio, reiciendis a aperiam sint rem soluta repellat deserunt, molestiae 
@@ -296,14 +304,48 @@
             </div>
         </div>
     </section>
-    <section id="">
-
+    <section id="ad-section1" class="ad-section bg-img-ad text-white">
+        <div class="overlay">
+            <h2 class="text-center">Stylish Axure Design</h2>
+            <hr class=" margin-auto">
+            <p class="text-gray text-center">Lorem ipsum dolor sit amet consectetur.</p>
+            <button class="bg-transport Dbtn margin-auto d-inline-block"><span class="text-white ">Download</span></button>
+        </div>
     </section>
-    <section id="Contact">
+    <section id="Contact" class="">
+        <h2 class="text-center">Contact Us</h2>
+        <hr class="text-orange margin-auto">
+        <p class="text-gray text-center">Lorem ipsum dolor sit amet consectetur.</p>
+        <form id="contact-form" class="text-center">
+            <div class="container">
+                <div class="user-data d-inline-block">
 
+                    <input type="text"   id="name" placeholder="Name" required>
+                    <input type="email"  id="email" placeholder="Email" required>
+                    <input type="text"   id="name" placeholder="Name" required>
+                </div>
+                <Textarea placeholder="Message" class="d-inline-block"></Textarea>
+                <input type="submit" value="Send Message" class="bg-orange text-white">
+                
+            </div>
+            
+        </form>
     </section>
-    <footer>
-
+    <footer class="bg-dark">
+        <div class="container text-center">
+            <div class="icons">
+                <a href="www.facebook.com"> 
+                    <i class="fa-brands fa-facebook-f text-gray"></i></a>
+                <a href="www.twitter.com"> 
+                    <i class="fa-brands fa-twitter text-gray"></i></a>
+                <a href="www.google.com"> 
+                    <i class="fa-brands fa-google-plus text-gray"></i></a>
+                <a href="www.instagram.com"> 
+                    <i class="fa-brands fa-instagram text-gray"></i>
+                </a>
+            </div>
+            <p> Moahmmed Abdelraouf NTI 2024   &COPY;</p>
+        </div>
     </footer>
 
 </body>

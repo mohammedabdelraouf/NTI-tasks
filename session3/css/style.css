@@ -59,6 +59,10 @@ html{
     text-align: center;
     padding: 2%;
 }
+.margin-auto{
+    margin-left:auto ;
+    margin-right: auto;
+}
 .f-custom-font1{
     vertical-align: middle;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;;
@@ -130,13 +134,19 @@ html{
 .clear{
     clear: both;
 }
-input{
+input ,textarea {
     width: 100%;
-    padding :10% 2% 2% 2%; 
+    padding :2%; 
     border: 0px ;
     margin-bottom:1% ;
+    margin-top: 6%;
     border-bottom: 1px solid lightgray;
     font-size: 18px;
+}
+textarea{
+ width: 40%;
+ resize: none;
+
 }
 h1{
     margin-bottom: 5px;
@@ -145,8 +155,8 @@ h1{
 hr{
     width:45px;
     border: 2px solid;
-    margin-top: 3px;
-    margin-bottom: 3px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 span{
     color: rgb(255, 155, 81);
@@ -176,7 +186,10 @@ span{
 }
 
 
-
+.bg-img-ad{
+    background-image: url(../imges/ad-bg.jpg);
+    background-size: 100% 100%;
+}
 
 /*custom*/
 
@@ -221,10 +234,11 @@ form input[type="submit"]{
     border-bottom-left-radius:3px ;
     border-bottom-right-radius:3px ;
 }
-#Dbtn{
+.Dbtn{
     padding: 1% 3%;
     background-color: rgba(0, 0, 0,0);
     border: 1px solid white;
+    margin-bottom: 3%;
 }
 
 .custom-container2{
@@ -266,10 +280,7 @@ li button{
     width: 25%;
     box-shadow:none;
 }
-#services hr, #Pricing hr{
-    margin:10px auto;
 
-}
 #Pricing .card{
     box-shadow: none;
     background-color: white;
@@ -322,20 +333,17 @@ font-size: 30px;
 #Reviews{
     /* text-align: center; */
 }
-#Reviews hr{
-    margin: auto;
-}
+
 
 #Reviews .card{
     box-shadow: none;
-    width: 20%;
+    width: 25%;
     text-align: left;
-    margin: 5% 0%;
-
+    margin: 0% 3% 5% 3%;
 }
 .review p{
  margin: 10% 3%;
- padding: 4% 2%;
+ padding: 4% 5%;
  border-radius: 3px;
 }
 .reviewer-info{
@@ -356,5 +364,44 @@ img.img-icon{
     top:0%;
     left: 5% ;
     z-index: 8;
-    border: 3px solid white;
 }
+.custom-img{
+    width: 30%;
+    margin: 5% 2%;
+}
+.ad-section{
+    text-align: center;
+}
+#contact-form{
+ margin-bottom: 5%;   
+}
+#contact-form input {
+    padding: 1% 2%;
+    width: 80%;
+    margin-top:3%;
+}
+
+#contact-form input[type="submit"]{
+    padding: 1% 2%;
+    width: 12%;
+    padding: 1% 1%;
+    
+}
+.icons a{
+    margin: 1% 8%;
+    font-size: 36px ;
+}
+footer .icons a{
+    margin: 2%;
+    margin-bottom: 1%;
+    font-size: 24px;
+}
+
+footer p{
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 12px;
+}
+
+
+
