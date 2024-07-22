@@ -45,6 +45,9 @@ html{
 .text-gray{
     color: rgb(150,150,150);
 }
+.text-gray-light{
+    color: rgb(230,230,230);
+}
 .text-orange
 {
     color: rgb(255, 155, 81);
@@ -58,6 +61,16 @@ html{
 .text-center{
     text-align: center;
     padding: 2%;
+}
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 22px solid  rgba(240, 240, 240);;
+    margin-top: -12%;
+    margin-left: 15%;
+  
 }
 .margin-auto{
     margin-left:auto ;
@@ -73,7 +86,7 @@ html{
 .container{
     width: 80%;
     margin: 0px auto;
-    padding-top: 1%;
+    padding: 1.15% 0%;
 }
 .card{
     margin-top: 2%;
@@ -85,6 +98,8 @@ html{
 
 .inner-container{
     width: 40%;
+    padding: 1.5% 0%;
+
 }
 
 .custom-margin{
@@ -146,6 +161,7 @@ input ,textarea {
 textarea{
  width: 40%;
  resize: none;
+ margin-bottom: 0px;
 
 }
 h1{
@@ -191,9 +207,44 @@ span{
     background-size: 100% 100%;
 }
 
+img.img-icon{
+    width: 25%;
+    height: 120%;
+    border-radius: 50%;
+    top: 0%;
+    left: 8%;
+    z-index: 8;
+}
+.custom-img{
+    width: 30%;
+    margin: 5% 2%;
+    box-shadow: 0px 0px 6px 4px rgba(79, 82, 79, 0.395)
+}
+
+.Dbtn{
+    padding: 1% 3%;
+    background-color: rgba(0, 0, 0,0);
+    border: 1px solid white;
+    margin-bottom: 3%;
+}
+
+.custom-container2{
+
+    width: 25%;
+    margin: 0% 3%;
+}
+
+
 /*custom*/
 
-
+i:hover{
+    font-size: 150%;
+}
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
 nav a{
     color: white;
     text-decoration: none;
@@ -214,14 +265,13 @@ nav li{
     background-size: 100% 100% ;
     
 }
-section#home-section form{
+#home-section form{
 
     width: 30%;
     border: 0px;
     border-radius: 5px;
     
 }
-
 form div{
     border-top-left-radius:3px ;
     border-top-right-radius:3px ;
@@ -234,19 +284,9 @@ form input[type="submit"]{
     border-bottom-left-radius:3px ;
     border-bottom-right-radius:3px ;
 }
-.Dbtn{
-    padding: 1% 3%;
-    background-color: rgba(0, 0, 0,0);
-    border: 1px solid white;
-    margin-bottom: 3%;
+#social-section .icons{
+    line-height: 1.8;
 }
-
-.custom-container2{
-
-    width: 25%;
-    margin: 0% 3%;
-}
-
 #trans-section{
     padding-top: 3%;
     background-color: #F5F5F5;
@@ -271,6 +311,9 @@ li button{
     padding: 3% 6%;
     border: 0px;
 }
+#trans-section li button:hover{
+    background-color: rgb(255, 155, 81); ;
+}
 #trans-area{
     margin-left: -10%;
     width:35%
@@ -288,6 +331,7 @@ li button{
     text-align: center;
     line-height: 1.7;
 }
+
 #sub-list-section .padding-left{
 
     padding-left: 60px;
@@ -314,6 +358,7 @@ li button{
     box-shadow: none;
     background-color: white;
 }
+
 .pricing-header {
     background-color: #333333;
     color: white;
@@ -324,8 +369,14 @@ li button{
 }
 .pricing-header p{
     padding: 3% 0%;
-    border-bottom: 5px solid rgb(255, 155, 81);
+    border-bottom: 5px solid rgb(255, 155, 81); 
  }
+ .hidden{
+    display: none;
+ }
+#Pricing .card:hover .hidden{
+    display: block ;
+}
 .pricing-header .price {
   font-size: 56px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
@@ -352,17 +403,12 @@ font-size: 30px;
 #mid-card {
     margin: 5% 3%;
 }
-#mid-card p{
+#Pricing .card p{
     padding: 3% 0%;
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
 }
-
-#Reviews{
-    /* text-align: center; */
-}
-
 
 #Reviews .card{
     box-shadow: none;
@@ -386,18 +432,6 @@ font-size: 30px;
 
 }
 
-img.img-icon{
-    width: 30%;
-    height: 100%;
-    border-radius: 50%;
-    top:0%;
-    left: 5% ;
-    z-index: 8;
-}
-.custom-img{
-    width: 30%;
-    margin: 5% 2%;
-}
 .ad-section{
     text-align: center;
 }
@@ -412,7 +446,7 @@ img.img-icon{
 
 #contact-form input[type="submit"]{
     padding: 1% 2%;
-    width: 12%;
+    width: max-content;
     padding: 1% 1%;
     
 }
@@ -432,5 +466,21 @@ footer p{
     font-size: 12px;
 }
 
+#top-btn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 2%;
+    right: 1%;
+    background-color: orange;
+    text-align: center;
+    line-height: 1.5;
+    color: white;
+    font-size: 27px;
+}
+button:hover , input[type="submit"]:hover{
+    font-size: 120%;
+}
 
 

@@ -1,0 +1,76 @@
+/* Reset styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Global styles */
+.container{
+    width: 75%;
+    margin: auto;
+}
+.overlay{
+    background-color: rgba(0,0,0,0.6);
+}
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+}
+main{
+    background-image: url(../images/main-bg.jpeg);
+    background-size: 100% 100%;
+    color: white;
+}
+
+/* Custom style */
+
+main a{
+    color: white;
+}
+nav{
+    border-bottom: 1px solid gray;
+    
+}
+nav ul{
+    width: 35%;
+}
+nav ul li:hover{
+    border-bottom: 5px solid rgb(0, 115, 255);
+}
+.number-icon{
+    width: 60px;
+    height: 40px;
+    border: 4px solid  gray;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.8;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 5%;
+    color: gray;
+}
+main .card{
+    width:30%;
+    margin-top: 20%;
+    margin-bottom: 2%;
+
+}
+.products-body{
+    width:70%
+}
+.side-bar{
+    width:25%;
+    border-left: 2px solid  gray;
+}
+#products-section{
+    padding-top: 2%;
+}
+#products-section ul{
+width: 60%;
+justify-content: space-evenly;
+}
