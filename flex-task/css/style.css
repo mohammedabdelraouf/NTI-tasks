@@ -9,6 +9,13 @@
 
 
 /* Global styles */
+
+.bg-dark{
+    background-color: rgb(22,22,22);
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
 .left-aside{
     width:68%;
 }
@@ -17,6 +24,9 @@
 }
 .text-gray{
     color: gray;
+}
+.text-white{
+    color: white;
 }
 .container{
     width: 80%;
@@ -276,4 +286,89 @@ justify-content: space-evenly;
 .card-details .card-footer{
     margin-top: 20%;
     color: gray;
+}
+/* latest-articals styles */
+aside {
+    margin-top: 6%;
+}
+aside h2{
+    border-bottom: 2px solid rgb(230,230,230);
+}
+.right-aside h2{
+    margin-bottom: 6%;
+}
+#latest-articals .small-cards-container{
+    width :100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3%; 
+}
+#latest-articals .small-card {
+    width:100%;
+    margin-bottom: 1%;
+}
+#latest-articals .small-card img{
+    width: 20%;
+}
+#latest-articals .card img{
+    width :100%;
+}
+#latest-articals .small-card-content{
+    padding: 3% 4%;
+}
+.custom-margin-3{
+    margin: 1% 0%;
+}
+
+.custom-margin-4{
+    margin-bottom:4% ;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+
+#latest-articals .card .card-footer{
+
+    padding-bottom: 3%;
+}
+
+footer{
+    margin-top: 2%;
+}
+
+footer input{
+    background-color: black;
+    color: rgb(145 ,145, 145);
+    border: none;
+    border-bottom: 2px solid rgb(145 ,145 , 145);
+    margin: 5% 0%;
+    padding: 1% 1%;
+    width: 100%
+}
+.footer-card{
+    margin: 3% 0%;
+    width:25%;
+}
+.footer-card ul:nth-child(even){
+    margin-top: 6%;
+}
+#submit-btn{
+    bottom: 22%;
+    right: 1%;
+}
+#up-btn {
+    background-color: rgb(33, 33, 33);
+    color: rgb(205, 205, 205);
+    position: absolute;
+    top:25%;
+    right: 3%;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 1.8;
+    border-radius: 50%;
+
 }
