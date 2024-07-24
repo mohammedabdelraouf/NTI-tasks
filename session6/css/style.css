@@ -22,14 +22,17 @@ nav ul{
     background-color: black;
     color: aliceblue;
     transform: translateX(-30px);
+    border-radius: 5%;
 }
 nav span:hover{
     cursor: pointer;
     transition: 10s;
 }
 li{
-    padding: 2% 3%;
-    margin: 10px 30px;
+    width: 100%;
+    padding: 20px 30px;
+    margin: 5px 0px;
+    border-bottom: 1px solid gray;
 }
 span:hover + ul{
     visibility: visible;
@@ -37,6 +40,10 @@ span:hover + ul{
     transition-duration: 1s;
     /* transform: translateX(5px); */
     
+}
+li:hover{
+    background-color: rgb(162, 200, 228);
+    color: black;
 }
 ul:hover{
     visibility: visible;

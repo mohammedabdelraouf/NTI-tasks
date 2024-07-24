@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <main>
@@ -66,13 +67,26 @@
                     <div class="d-flex">
                         <h2>Don't Miss</h2>
                         <ul class="d-flex">
-                            <li><a href=""class="text-gray">Home</a></li>
-                            <li><a href=""class="text-gray">Pages</a></li>
+                            <li><a href=""class="text-gray">All</a></li>
+                            <li><a href=""class="text-gray">Style hunter</a></li>
+                            <li><a href=""class="text-gray">Vogue</a></li>
+                            <li><a href=""class="text-gray">Health & Fitness</a></li>
+                            <li><a href=""class="text-gray">Travel</a></li>
                             <li><a href=""class="text-gray">Gadgets</a></li>
-                            <li><a href=""class="text-gray">Lifestyle</a></li>
-                            <li><a href=""class="text-gray">Video</a></li>
-                            <li><a href=""class="text-gray">Contact</a></li>
-                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <div class="position-relative">
+                                <li class="more-btn">
+                                    <a href="" class="text-gray"> More </a><i class="fa-solid fa-angle-down text-gray"></i>
+                                    
+                                </li>
+                                <ul class="more-menue position-absolute bg-dark">
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                </ul>
+                            </div>
+                            
+                            
                         </ul>
                     </div>
                   </nav>
@@ -144,17 +158,29 @@
                     <button> <i class="fa-solid fa-angle-right"></i></button>
                   </div> 
 
-                  <nav class="body-nav custom-margin-top">
+                  <nav class="body-nav ">
                     <div class="d-flex">
                         <h2>Don't Miss</h2>
                         <ul class="d-flex">
-                            <li><a href=""class="text-gray">Home</a></li>
-                            <li><a href=""class="text-gray">Pages</a></li>
+                            <li><a href=""class="text-gray">All</a></li>
+                            <li><a href=""class="text-gray">Style hunter</a></li>
+                            <li><a href=""class="text-gray">Vogue</a></li>
+                            <li><a href=""class="text-gray">Health & Fitness</a></li>
+                            <li><a href=""class="text-gray">Travel</a></li>
                             <li><a href=""class="text-gray">Gadgets</a></li>
-                            <li><a href=""class="text-gray">Lifestyle</a></li>
-                            <li><a href=""class="text-gray">Video</a></li>
-                            <li><a href=""class="text-gray">Contact</a></li>
-                            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <div class="position-relative">
+                                <li class="more-btn text-gray">
+                                    More <i class="fa-solid fa-angle-down text-gray"></i> 
+                                </li>
+                                <ul class="more-menue position-absolute bg-dark">
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                    <li><a href="" class="text-gray bg-dark">option 1 </a></li>
+                                </ul>
+                            </div>
+                            
+                            
                         </ul>
                     </div>
                   </nav>
@@ -321,6 +347,9 @@
                         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sunt laborum nostrum eaque iusto illo autem ex.</h4>
                     </div>
+                    <div>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -442,8 +471,9 @@
                 <aside class="right-aside">
                     <h2>Most popular videos</h2>
                     <div class="card custom-margin-4">
-                        <div>
+                        <div class="position-relative">
                             <img src="images/2.jpg">
+                            <button><i class="fa-solid fa-play position-absolute pos-center"></i></button>
                         </div>
                         
                         <div class="card-body">
@@ -458,8 +488,9 @@
                         </div>
                     </div>
                     <div class="card">
-                        <div>
+                        <div class="position-relative">
                             <img src="images/2.jpg">
+                            <button><i class="fa-solid fa-play position-absolute pos-center"></i></button>
                         </div>
                         
                         <div class="card-body">
@@ -499,8 +530,11 @@
                 </div>
                 <div class="footer-card position-relative">
                     <h2 class="text-white">Subscribe</h2>
-                    <input type="text" class="bg-dark" placeholder="Enter your email">
-                    <a href="" class="text-gray position-absolute" id="submit-btn"><i class="fa-solid fa-arrow-right"></i></a>
+                    <form action="">
+                        <input type="text" class="bg-dark" placeholder="Enter your email">
+                        <button type="submit" href="" class="text-gray position-absolute" id="submit-btn" value=""><i class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    
                 </div>
             </div>
         </div>

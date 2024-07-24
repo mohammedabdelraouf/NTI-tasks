@@ -128,7 +128,7 @@ nav ul{
     width: 35%;
 }
 nav ul li:hover{
-    border-bottom: 5px solid rgb(0, 115, 255);
+    border-bottom: 5px solid rgb(0, 115, 255) !important;
 }
 .number-icon{
     width: 60px;
@@ -165,7 +165,7 @@ main .card{
 }
 
 #products-section ul{
-width: 60%;
+width: 80%;
 justify-content: space-evenly;
 }
 
@@ -197,7 +197,34 @@ justify-content: space-evenly;
     width: 25%; 
     margin-right: 2%;
 }
+.more-menue{
+    width: 150% !important;
+    right: 25%;
+    z-index: 999;
+    padding: 5%;
+    text-align: center;
+    border-radius: 5%;
+    visibility: hidden;
+}
 
+.more-menue li{
+    margin: 5% 0%;
+    padding: 3% 0%;
+    border-bottom: 1px solid rgb(145,145,145);
+}
+.more-menue li:last-child{
+    border-bottom: 0;
+}
+.more-btn:hover + ul.more-menue{
+    visibility: visible;
+    transform: translateX(25%);
+    transition-duration: 0.5s;
+}
+.more-menue:hover{
+    visibility: visible;
+    transform: translateX(25%);
+    transition-duration: 0.1s;
+}
 .side-bar{
     margin-top: 5.5% ;
     width:30%;
@@ -225,6 +252,9 @@ justify-content: space-evenly;
 .side-bar .small-card  img{
     width: 22% !important;
     margin-right: 3%;
+}
+.side-bar div:last-child{
+    border-bottom: none;
 }
 
 .card .card-body{
@@ -308,18 +338,25 @@ aside h2{
     margin-bottom: 1%;
 }
 #latest-articals .small-card img{
-    width: 20%;
+    width: 30%;
 }
 #latest-articals .card img{
     width :100%;
 }
 #latest-articals .small-card-content{
-    padding: 3% 4%;
+    padding: 2.97% 4%;
+}
+#latest-articals .card div i{
+    color: rgb(198, 198, 198);
+    font-size: 26px;
 }
 .custom-margin-3{
     margin: 1% 0%;
 }
-
+.pos-center{
+    top: 50%;
+    right: 45%;
+}
 .custom-margin-4{
     margin-bottom:4% ;
 }
@@ -347,6 +384,17 @@ footer input{
     padding: 1% 1%;
     width: 100%
 }
+footer input:focus{
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 5%;
+    color: black;
+    font-size: larger;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
 .footer-card{
     margin: 3% 0%;
     width:25%;
@@ -357,6 +405,9 @@ footer input{
 #submit-btn{
     bottom: 22%;
     right: 1%;
+    width: 10%;
+    background-color: transparent;
+    border: none;
 }
 #up-btn {
     background-color: rgb(33, 33, 33);
@@ -371,4 +422,9 @@ footer input{
     line-height: 1.8;
     border-radius: 50%;
 
+}
+
+button:hover{
+    cursor: pointer;
+    font-size: 120%;
 }

@@ -1,0 +1,59 @@
+/* responsive design */
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 900px) { 
+
+    main {
+        width:100%;
+    }
+   
+    .d-flex{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100% !important;
+        margin-bottom: 2%;
+    }
+    main .card p:nth-child(even) {
+        width:65%
+    }
+    main .card {
+        margin-top:2% ;   
+    }
+   .small-cards-container{
+        width: 100% !important;
+        margin-top: 3% !important;
+        /* flex-wrap: nowrap !important; */
+    }
+    .small-card{
+        margin-bottom: 1%;
+    }
+    .small-card-content{
+        width:65%
+    }
+    .products-body , .right-aside{
+        width: 100%;
+    }
+    .side-bar , .left-aside{
+        width:90%;
+        margin: auto;
+        border-left: 0;
+    }
+   nav ul{
+        width: 100% !important;
+        margin-top: 2%;
+    }
+    .footer-card{
+        width: 33%;
+        margin-right: 5%;
+    }
+    .footer-card ul:last-child{
+        margin-top: 30% ;
+    }
+ }
+/*
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
