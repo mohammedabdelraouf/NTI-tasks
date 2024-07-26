@@ -1,0 +1,15 @@
+.nav-link{
+    color: gray;
+}
+
+#result{
+    margin-top: 5%;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgb(77, 155, 223);
+    padding: 5%;
+}
+#degree{
+
+    margin-left: 40%;
+}
