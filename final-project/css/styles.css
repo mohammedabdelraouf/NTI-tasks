@@ -1,4 +1,6 @@
 
+
+/* global  */
 .fs-12
 {
     font-size: 12px;
@@ -18,16 +20,35 @@
 .height-2{
     height: 2px;
 }
+.drop-shadow {
+    filter: drop-shadow(-3px 7px 7px #666666) !important;
+    -webkit-filter: drop-shadow(7px 7px 7px #666666);
+}
 .header-icon{
     margin-left:9%;
     font-size: 18px;
     font-weight: 0;
 }
+/* custom styling */
+
+/*  nav-bar custom styles */
 .nav-link{
     color: black;
     font-size: 1rem;
-    font-family:'Josefin Sans', sans-serif;
+    font-family:'Josefin Sans', sans-serif !important;
 }
+.nav-item{
+    margin-left: 1rem;
+}
+.nav-item.dropdown:hover ul.dropdown-menu{
+    display: block !important;
+   
+}
+
+
+
+
+/*  */
 .carousel-item  img{
     height: 90vh;
 }
@@ -136,6 +157,7 @@ hr{
     border-width: 1px;
     border-color: #f9f9f9;
     padding: 3% 1%;
+    overflow: hidden;
     /* width: 30rem !important; */
 }
 
@@ -149,12 +171,17 @@ hr{
     border-radius: inherit;
 }
 
+.card-aside{
+    height: 100% !important;
+    
+}
+
 #services-section .card:hover .card-body{
     width: 100%;
     visibility: visible;
     top: 0;
     bottom: 0;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
 #services-section i{
     background-color: #f9f9f900 !important;
@@ -206,7 +233,7 @@ hr{
     overflow: hidden;
     margin-bottom: 3%;
     text-align: center;
-    width: 26.5% !important;
+    /* width: 26.5% !important; */
 }
 
 .team-card a{
@@ -244,7 +271,7 @@ hr{
 }
 .team-card:hover .member-social{
     transform: translateY(0%);
-    transition-delay: 0.1s;
+    transition-delay: 0.2s;
     transition-duration: 0.2s;
 }
 /* pricing area */
@@ -280,6 +307,9 @@ hr{
 /* Testimonial */
 
 /*  */
+#Clients .card {
+    overflow: hidden;
+}
 .custom-size
 {
     padding-top: 1%;

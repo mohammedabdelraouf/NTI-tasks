@@ -1,0 +1,69 @@
+@media (max-width:900px){
+    header{
+        display: none;
+    }
+    .price-card , .card {
+        width: 50%;
+         display: block;
+         margin: 2% auto;
+        /* font-size: small !important; */
+    }
+    .card-aside{
+        height: 100% !important;
+        font-size: 14px !important; 
+    }
+    #Testimonial .card {
+        text-align: center !important;
+    }
+    #Clients .card {
+        width: 35%;
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    } 
+    footer{
+        font-size: small;
+    }
+    .man-pic{
+        display: none !important;
+    }
+    
+}
+@media (max-width:500px) {
+    *{
+        margin: auto;
+    }
+   
+    img{
+        width: 100% !important;
+    }
+    .custom-card
+    {
+        position: static !important;
+        width: 100%;
+        margin: 2% auto !important;
+        
+    }
+    .price-card , .card {
+        width: 80%;
+         display: block;
+         margin: 2% auto;
+        /* font-size: small !important; */
+    }
+    #Clients .card {
+        width: 80%;
+        margin-left: 2% !important;
+        margin-right: 2% !important;
+    } 
+    .team-card {
+        width :50%;
+        font-size: small;
+    }
+    .team-card:hover .card-body{
+        top:unset;
+        bottom: 0;
+        transition-duration: 5s !important ;
+    }
+    
+   
+}
+
