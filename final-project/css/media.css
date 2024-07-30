@@ -1,16 +1,45 @@
-@media (max-width:900px){
-    header{
-        display: none;
+@media (min-width:900px) {
+    @media (min-width:900px) {
+        .text-area-icon{
+            top:5%;
+            left: 0.5rem;
+        }
+        
+    }  
+}
+@media (max-width:1270px){
+    .custom-card{
+        position: static !important;
+        width: 90% !important;
+        margin-top: 10% !important;
     }
-    .price-card , .card {
-        width: 50%;
+
+}
+@media (max-width:1000px) {
+    header ,  .man-pic , .dropdown-menu{
+        display: none !important;
+    }
+   
+    .dropdown:hover .dropdown-menu{
+        display: block !important;
+    }
+    
+}
+@media (max-width:900px){
+    
+     .price-card  {
+         width: 50%;
          display: block;
          margin: 2% auto;
         /* font-size: small !important; */
-    }
+      }
+    
     .card-aside{
         height: 100% !important;
         font-size: 14px !important; 
+    }
+    .card-aside i{
+        display: block;
     }
     #Testimonial .card {
         text-align: center !important;
@@ -20,17 +49,20 @@
         margin-left: 2% !important;
         margin-right: 2% !important;
     } 
+    
     footer{
         font-size: small;
     }
-    .man-pic{
-        display: none !important;
-    }
+
+    
     
 }
 @media (max-width:500px) {
     *{
         margin: auto;
+    }
+    hr{
+        display: none !important;
     }
    
     img{
@@ -55,15 +87,9 @@
         margin-right: 2% !important;
     } 
     .team-card {
-        width :50%;
         font-size: small;
     }
-    .team-card:hover .card-body{
-        top:unset;
-        bottom: 0;
-        transition-duration: 5s !important ;
-    }
-    
+   
    
 }
 

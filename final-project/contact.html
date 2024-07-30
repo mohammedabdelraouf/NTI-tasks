@@ -3,36 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="bg-primary py-2 text-white font-smaller">
         <div class="container py-1">
             <div class="row justify-content-evenly">
-                <div class="col-6 row justify-content-start">
-                    <div class="social-icons-container border-end border-white col-4 ">
+                <div class="col-md-8 col-lg-7 col-xl-6 row justify-content-start">
+                    <div class="social-icons-container border-end border-white text-end col-md-6 col-xl-5 ">
                         <i class="fa-brands fa-facebook-f header-icon"></i>
                         <i class="fa-brands fa-twitter header-icon"></i>
                         <i class="fa-brands fa-linkedin header-icon"></i>
                         <i class="fa-brands fa-instagram header-icon"></i>
                         <i class="fa-brands fa-google-plus-g header-icon"></i>
                     </div>
-                    <div class="col-8">
+                    <div class="col-md-7">
                         <i class="fa-solid fa-location-dot"></i>
                         <span class="label-text ms-1">267 Park Avenue New York, NY 90210 </span>
                     </div>
                 </div>
 
-                <div class="col-5 row justify-content-end">
-                    <div class="col-4 ">
+                <div class="col-lg-5 col-xl-4 row justify-content-end">
+                    <div class="col-auto text-end border-end border-white pe-2">
                         <i class="fa-regular fa-envelope"></i>
                         <span class="ms-2">Quick Email</span>
                     </div>
-                    <div class="col-5">
-                        <i class="fa-solid fa-phone-volume"></i>
+                    <div class="col-md-6 text-md-start text-xl-center pe-0">
+                        <i class="fa-solid fa-phone-volume "></i>
                         <span class="ms-2"> +1 (409) 987–5874 </span>
                     </div>
                 </div>
@@ -43,38 +44,70 @@
     <!-- Nav bar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-center">
         <div class="container justify-content-around py-2 mx-5">
-            <div class="col-2 py-2">
+            <div class="col-sm-4 col-md-2 py-2">
                 <a class="navbar-brand" href="#">
                     <img src="images/Trade-X-Logo.png" alt="Trade-X-Logo">
                 </a>
             </div>
-            <div class="row col-8 align-self-center">
+            <div class="row col-sm-12 col-md-8 align-self-center">
                 
                 <div class="col text-end">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                            <i class="fa-solid fa-bars"></i>
                         </span>
-                        </button>
+                    </button>
                         
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav flex-wrap">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown link
+                                    Home
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">home1</a></li>
+                                    <li><a class="dropdown-item" href="#">home2</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                                    Headers
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Header Style1</a></li>
+                                    <li><a class="dropdown-item" href="#">Header Style2</a></li>
+                                    <li><a class="dropdown-item" href="#">Header Style3</a></li>
+                                    <li><a class="dropdown-item" href="#">Header Style4</a></li>
+                                    <li><a class="dropdown-item" href="#">Header Style5</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blog Post
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Masonary</a></li>
+                                    <li><a class="dropdown-item" href="#">Clasic</a></li>
+                                    <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Full Width</a></li>
+                                <li><a class="dropdown-item" href="#">Service 2 column</a></li>
+                                <li><a class="dropdown-item" href="#">Service 3 column</a></li>
+                                <li><a class="dropdown-item" href="#">Service 4 column</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Features
                                 </a>
                                 <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -82,29 +115,10 @@
                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
                             </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                                </a>
-                                <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
-                                </a>
-                                <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown link
+                                    Pages
                                 </a>
                                 <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -114,10 +128,10 @@
                             </li>
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="index.html">TradeX</a>
                             </li>
                         </ul>
-                        </div>
+                    </div>
         
                 </div>
                
@@ -127,40 +141,188 @@
     </nav>
     
     <!--  -->
-    <section class="mt-0 bg-dark text-white py-5 ">
+    <section id="contact-blank-img" class="">
+        <div class="overlay text-center text-white pt-5">
+            <h1 class="fs-40 py-5 my-5">Contact</h1>
+            <div class="text-center text-white mt-5 bg-black  bg-opacity-25">
+                <p class="py-3  mt-5"> <a href="index.html" class="text-decoration-none text-white">Home</a> > <span class="text-secondary">Contact</span> </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row justify-content-center overflow-hidden">
+                <div class="row  col-12 col-md-10 justify-content-center ">
+                    <div class="col-3 col-md-2  align-self-center">
+                        <hr class="col-2 ms-auto mb-2 ">
+                        <hr class=" col-4 ms-auto custom-border-1px mt-2">
+                    </div>
+                    <div class=" col-6  col-lg-5  col-xl-4  text-center">
+                        <h1 class="fs-40"> Contact info </h1>
+                    </div>
+                    <div class="col-3  col-md-2 align-self-center">
+                        <hr class="col-2 me-auto mb-2">
+                        <hr class="col-4 me-auto custom-border-1px mt-2">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center my-5 px-5">
+                <div class="col px-2">
+                    <div class="card border-0 text-center">
+                        <p class="text-primary fs-40">   
+                            <i class="fa-solid fa-location-dot"></i>
+                        </p>
+                        <h2>Address</h2>
+                        <p class="text-secondary">
+                            267-A , Street Name Park Sera Avenue , New York, NY 90210
+                        </p>
+                    </div>
+                </div>
+                <div class="col px-2">
+                    <div class="card border-0 text-center">
+                        <p class="text-primary fs-40">   
+                             <i class="fa-solid fa-phone-volume "></i> 
+                        </p>
+                        <h2>Call Us</h2>
+                        <p class="text-secondary">
+                            Phone 1 : (+098) 7654 3210
+                        </p>
+                    </div>
+                </div>
+                <div class="col px-2">
+                    <div class="card border-0 text-center">
+                        <p class="text-primary fs-40">   
+                            <i class="fa-regular fa-envelope"></i>
+                        </p>
+                        <h2>Email</h2>
+                        <p class="text-secondary">
+                            support@company.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center overflow-hidden">
+                <div class="row  col-12 col-md-10 justify-content-center ">
+                    <div class="col-3 col-md-2 ms-4-neg align-self-center">
+                        <hr class="col-2 ms-auto mb-2 ">
+                        <hr class=" col-4 ms-auto custom-border-1px mt-2">
+                    </div>
+                    <div class=" col-6  col-lg-5  col-xl-4  text-center">
+                        <h1 class="fs-1"> Get In Touch </h1>
+                    </div>
+                    <div class="col-3  col-md-2 align-self-center">
+                        <hr class="col-2 me-auto mb-2">
+                        <hr class="col-4 me-auto custom-border-1px mt-2">
+                    </div>
+                </div>
+            </div>
+    
+            <form  class="my-3" action="">
+                <div class="row  justify-content-center">
+                    <div class="col-12  col-md-4 px-4 px-lg-3 text-center ">
+                        <div class="position-relative border-bottom border-black">
+                            <input id="nameField"  placeholder="Name" type="text" class="w-100 border-0  ps-4" required>
+                            <i class="fa-solid fa-user position-absolute input-icon-pos"></i>
+                        </div>
+                        
+
+                    </div>
+                    <div class="col-12  col-md-4 px-4 my-4 my-md-auto px-lg-3 text-center ">
+                        <div class="position-relative border-bottom border-black">
+                        <input id="emailField" placeholder="Email" type="email" class="w-100 border-0  ps-4" required>
+                        <i class="fa-regular fa-envelope position-absolute input-icon-pos"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 px-4 px-lg-3 text-center position-relative ">
+                        <div class="position-relative border-bottom border-black">
+                        <input id="subjectField" placeholder="Subject" type="text" class="w-100 border-0 ps-4" required>
+                        <i class="fa-solid fa-pencil position-absolute input-icon-pos"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-4 px-xl-3 position-relative mt-5 ">
+                    <textarea name="" id="" placeholder="Your Message" class="border-0 px-4  border-bottom border-black" required></textarea>
+                    <i class="fa-solid fa-pencil position-absolute text-area-icon "></i>
+                </div>
+                <input type="submit" value="Send Message " class="border-0 px-3 py-2 my-3 rounded-pill bg-primary text-white">
+            </form>
+        </div>
+
+        
+        
+    </section>
+
+    <footer class="mt-0 bg-dark text-white pt-4 ">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h2>Contact Info</h2>
                     <hr class="col-2 border border-primary">
                     <p>
-                        <span class="icon"></span> 123 Street Market, Life Plaza, New York
+                        <span class="icon me-2"> <i class="fa-solid fa-location-dot"></i> </span> 123 Street Market, Life Plaza, New York
                     </p>
                     <p>
-                        <span class="icon"></span> 987654321
+                        <span class="icon me-2"><i class="fa-solid fa-phone-volume "></i> </span> 987654321
                     </p>
                     <p>
-                        <span class="icon"></span> team@gmail.com
+                        <span class="icon me-2"><i class="fa-regular fa-envelope"></i></span> team@gmail.com
                     </p>
                 </div>
                 <div class="col">
                     <h2>Posts</h2>
                     <hr class="col-2 border border-primary">
+                    <div class="footer-card d-flex border-bottom border-secondary ">
+                        <div class="img-container col-3 pe-3 py-2">
+                            <img src="images/gallery2-1-360x260.png" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-content pt-1 pb-2">
+                            <h6>Four ways to cheer and plan your self up on Blue</h6>
+                            <span> <i class="fa-solid fa-calendar-days"></i>  December 19,2024 </span>
+                        </div>
+                    </div>
+                    <div class="footer-card d-flex py-2">
+                        <div class="img-container col-3 pe-3 py-2">
+                            <img src="images/bg3-360x260.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="card-content pt-1">
+                            <h6>Four ways to cheer and plan your self up on Blue</h6>
+                            <span> <i class="fa-solid fa-calendar-days"></i>  December 19,2024 </span>
+                        </div>
+                    </div>
 
                 </div>
                 <div class="col">
                     <h2>Popular</h2>
                     <hr class="col-2 border border-primary">
+                    <div class="">
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Accountancy</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Affiliate</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Design</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Construction</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">branding</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Drupal</a> </button>                          
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Education</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Graphics</a></button>                            
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Joomla</a></button>                          
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Marketing</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Money</a></button>                         
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Tally</a></button>                         
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Transform</a></button>
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Website</a></button>                           
+                        <button class="btn footer-btn-hover rounded-pill bg-white text-black m-1" ><a href="" class="text-decoration-none text-black">Wordpress</a></button></div>
+                    </div>
                 </div>
             </div>
             
         </div>
-    </section>
-    <footer class="custom-shadow bg-dark pt-2 pb-2 ">
-            <div class="col text-center text-primary">
-             &copy; 2019 Developed By DTM Theme
-             </div>
+        <div class="col text-center text-primary custom-shadow bg-dark pt-2 pb-2 mt-5 ">
+            &copy; 2019 Developed By DTM Theme
+        </div>
     </footer>
+    <button class="top-btn bg-primary border-0" id=""><a href="#contact-blank-img" class="text-decoration-none text-white"> <i class="fa-solid fa-angle-up"></i> </a></button>
+    <!--  -->
     <script src="js/bootstrap.bundle.js"></script>
 
 </body>
