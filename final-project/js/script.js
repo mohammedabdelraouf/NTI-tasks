@@ -1,6 +1,26 @@
 const topBtn = document.getElementsByClassName("top-btn")
 const navBar = document.querySelector("nav")
 
+$(document).ready(function() {
+ 
+    $(".owl-carousel").owlCarousel({
+
+        items:2,
+        margin:30,
+        loop:true,
+        nav:true,
+        navText:['<i class="fa-solid fa-left-long  rounded-start-pill bg-primary px-3 py-2 me-1 text-white text-center fs-14"></i>' , '<i class="fa-solid fa-right-long px-3 py-2 ms-1 rounded-end-pill bg-primary text-white text-center fs-14"></i>' ],
+        responsive:{
+            0:{
+                items:1
+            },
+            1000:{
+                items:2,
+            }
+        }
+    });
+   
+  });
 console.log(navBar);
 document.addEventListener("scroll" , (e)=>{
     if (document.documentElement.scrollTop < 220)

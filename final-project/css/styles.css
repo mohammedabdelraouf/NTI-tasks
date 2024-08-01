@@ -100,6 +100,10 @@ nav{
     height: 45%;
     
 }
+.owl-nav{
+    margin-top: 5%;
+    text-align: center !important;
+}
 .carousel-indicators button{
     width: 0.5rem !important;
     height: 0.5rem !important;
