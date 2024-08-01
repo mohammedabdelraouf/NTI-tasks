@@ -1,30 +1,30 @@
-function looping(startNum , endNum , breakNum , continueNum){
+// function looping(startNum , endNum , breakNum , continueNum){
 
-    if(startNum == undefined || endNum == undefined || 
-        breakNum ==undefined  || continueNum == undefined )
-    {
-        console.log("please enter valid values")
-        return
-    }
+//     if(startNum == undefined || endNum == undefined || 
+//         breakNum ==undefined  || continueNum == undefined )
+//     {
+//         console.log("please enter valid values")
+//         return
+//     }
 
-    for(var i =startNum ; i <= endNum ; i++ )
-    {
+//     for(var i =startNum ; i <= endNum ; i++ )
+//     {
 
-        if(i == continueNum) {
-            continue;
-        }
-        else if (i == breakNum)
-        { 
-            console.log(`I will break at ${i}`);
-            break; 
+//         if(i == continueNum) {
+//             continue;
+//         }
+//         else if (i == breakNum)
+//         { 
+//             console.log(`I will break at ${i}`);
+//             break; 
 
-        }
-        else{
-            console.log(i)
-        }
-    }
+//         }
+//         else{
+//             console.log(i)
+//         }
+//     }
 
-}
+// }
 
 
 
@@ -93,8 +93,8 @@ function addUser(name ,  balance , usersArr){
     };
 
     usersArr.push(user);
-
-    showUsers(usersArr);
+    // localStorage.setItem('users' , JSON.stringify(usersArr))
+    // showUsers(usersArr);
 }
 
 function updateBalance(userId , newBalance , usersArr){
@@ -108,6 +108,11 @@ function updateBalance(userId , newBalance , usersArr){
         }
         
     });
+
+    // usersArr[userIndex].balance= newBalance
+    // localStorage.setItem('users' , JSON.stringify(usersArr))
+    // showUsers(usersArr)
+
 }
 
 function deleteUserByID(userId , usersArr){
@@ -120,32 +125,93 @@ function deleteUserByID(userId , usersArr){
         }
         
     });
+
+    // usersArr.splice(userIndex, 1)
+    // localStorage.setItem('users' , JSON.stringify(usersArr))
+    // if(users.length==0){
+    //     tableBody.parentElement.classList.add('d-none')
+    // }
+    // else
+    // {
+    //     showUsers(usersArr)
+    // }
 }
+
 
 /* Session 5 */
-const divContainer = document.getElementById("div-container")
 
-const addBtn = document.getElementById()
+// const nameField = document.getElementById("firstName")
+// const balanceField2 = document.getElementById("balanceFiled")
+// const tableBody = document.getElementById("div-container")
 
-function showUsers(usersArr){
-    usersArr.forEach((element ,i)=>{
-        let div = document.createElement('tr')
-        let name = document.createElement('td')
-        name.innerText = element.fName
-        let balance = document.createElement('td')
-        balance.innerText = element.balance
-        let id = document.createElement('td')
-        id.innerText = element.id
-        
-        div.appendChild(name)
-        div.appendChild(balance)
-        div.appendChild(id)
-         
-        divContainer.appendChild(div)
+// const addBtn = document.getElementById("addbtn")
 
-    })
-}
+// let users = JSON.parse(localStorage.getItem('users'))
+// if (users !=null ){
+//     console.table(users)
+//     showUsers(users)
+// }
+// else{
+//     users =[]
+// }
 
+
+// addBtn.addEventListener("click",(e)=>{
+//     e.preventDefault()
+//     addUser(nameField.value , balanceField2.value ,users)
+//     console.table(users)
+// })
+
+// function showUsers(usersArr){
+//     tableBody.parentElement.classList.remove('d-none')
+//     tableBody.innerText=""
+//     usersArr.forEach((element ,i)=>{
+//         // create row elements 
+//         let tr = document.createElement('tr')
+//         let name = document.createElement('td')
+//         name.innerText = element.name
+//         let balance = document.createElement('td')
+//         balance.innerText = element.balance
+//         let id = document.createElement('td')
+//         id.innerText = element.id
+//         let removeBtn =document.createElement("button")
+//         removeBtn.classList.add('btn' ,'btn-danger' , 'mx-2')
+//         removeBtn.innerText = "Remove"
+//         let updateBtn =document.createElement("button")
+//         updateBtn.classList.add('btn' ,'btn-info')
+//         updateBtn.innerText = "Update"
+//         // add eventListeners 
+
+//         removeBtn.addEventListener("click", ()=>{
+//             deleteUserByID(i, users)
+//             console.table(users)
+//         })
+
+//         updateBtn.addEventListener('click' , ()=>{
+//             updateBalance(i , balanceField2.value ,users)
+//             console.table(users)
+//         })
+
+
+//         // append elements in parent 
+//         tr.appendChild(name)
+//         tr.appendChild(balance)
+//         tr.appendChild(id)
+//         tr.appendChild(removeBtn)
+//         tr.appendChild(updateBtn)
+//         tableBody.appendChild(tr)
+
+//     })
+// }
+
+
+// window.addEventListener('', (e)=>{
+//     console.log(e)
+//     users = JSON.parse(localStorage.getItem('users'))
+//     console.table(users)
+//     showUsers(users)
+
+// })
 
 /**session 5 end */
 // var users = []
@@ -223,18 +289,18 @@ function showUsers(usersArr){
 
 // ////////////////////****************************** */
 
-const div = document.getElementById("div-id")
+// const div = document.getElementById("div-id")
 
-div.addEventListener("scroll" , (e)=>{
-    console.log(e);
-    if (e.target.scrollTop > 200)
-    {
+// div.addEventListener("scroll" , (e)=>{
+//     console.log(e);
+//     if (e.target.scrollTop > 200)
+//     {
 
-        div.style.backgroundColor ='red';
-    }
-    else if (e.target.scrollTop < 200)
-    {
+//         div.style.backgroundColor ='red';
+//     }
+//     else if (e.target.scrollTop < 200)
+//     {
 
-        div.style.backgroundColor ='aqua';
-    }
-})
+//         div.style.backgroundColor ='aqua';
+//     }
+// })

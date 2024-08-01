@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-secondary">
+
+    <form class="form-control w-75 m-auto mt-5 text-center" >
+        <div class="row col-8 m-auto justify-content-around align-items-center">
+            <input class="col-12 col-md-4  rounded py-2 border border-secondary " type="text" id="firstName" placeholder="Name">
+            <input class="col-12 col-md-4 rounded  py-2 border border-secondary" type="number" id="balanceFiled" placeholder="Balance">
+            <button id="addbtn" class="btn btn-primary  col-2 " > add user</button>
+
+        </div>
+        
+    </form>
+    <h1 class="text-center bg-primary rounded-pill bg-opacity-50 w-25 m-auto mt-5 text-white py-2">users data</h1>
+    <table  class="bg-white">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Balance</th>
+                <th>ID</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="div-container">
+
+        </tbody>
+        
+    </table>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
