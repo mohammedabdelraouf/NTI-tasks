@@ -225,9 +225,16 @@
                         Dorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit nisi a dictum tristique. Nullam urna metus, vestibulum ac sodales eSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam 
                         remrutrumDorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis.
                     </p>
-                    <button class=" rounded-pill border-0 bg-primary text-white px-4 py-1">
-                        <span class="py-3">Learn More</span>
-                    </button>
+                    <div class="button-container col-4 rounded-pill position-relative overflow-hidden p-0">
+                        <!-- <input class="rounded-pill bg-primary border-0 text-white text-bold  fluid" type="submit" value="Subscribe"> -->
+                        <button class=" rounded-pill border-0 bg-primary text-white px-4 py-1 fluid">
+                            <span class="py-3">Learn More</span>
+                        </button>
+                        <div class="button-bg-dynamic position-absolute">
+
+                        </div>
+                    </div>
+                    
                 </div>
                 <div class="custom-card col-12 col-md-3 position-absolute z-2 bg-white">
                     <div class="row mt-3">
@@ -854,10 +861,15 @@
                     </h2>
                 </div>
                 <div class="col-12 col-lg-6 align-self-center">
-                    <form class="row justify-content-evenly" action="">
-
+                    <form class="row justify-content-evenly position-relative" action="">
                         <input class="col-8 rounded py-2" type="text" placeholder="Input your mail">
-                        <input class=" col-3 rounded-pill bg-primary border-0 text-white text-bold" type="submit" value="Subscribe">
+                        <div class="button-container col-3 rounded-pill position-relative overflow-hidden p-0">
+                            <input class="rounded-pill bg-primary border-0 text-white text-bold w-100 fluid" type="submit" value="Subscribe">
+                            <div class="button-bg-dynamic position-absolute">
+
+                            </div>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
@@ -1239,8 +1251,9 @@
         </div>
     </footer>
     <!--  -->
-    <button class="top-btn bg-primary border-0" id=""><a href="#slider" class="text-decoration-none text-white"> <i class="fa-solid fa-angle-up"></i> </a></button>
+    <button class="top-btn bg-primary border-0" id="top-btn-home"><span class="text-decoration-none text-white"> <i class="fa-solid fa-angle-up"></i> </span></button>
 
     <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

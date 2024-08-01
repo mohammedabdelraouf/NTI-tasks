@@ -26,6 +26,10 @@ body
 .height-2{
     height: 2px;
 }
+.fluid{
+    width: 100% !important;
+    height: 100% !important;
+}
 .drop-shadow {
     filter: drop-shadow(-3px 7px 7px rgb(136, 134, 134)) !important;
     -webkit-filter: drop-shadow(7px -10px 7px #666666);
@@ -38,10 +42,13 @@ body
 /* custom styling */
 
 /*  nav-bar custom styles */
+.nav-top-neg{
+    top: -50% !important;
+}
 nav{
-    position: sticky !important;
-    top: 0;
-    z-index: 121564;
+    /* position: sticky !important; */
+    z-index: 99999999;
+    transition-duration: 1s;
 }
 .nav-link{
     color: black;
@@ -88,7 +95,7 @@ nav{
     bottom: 22%;
     left: unset;
     right: 2%;
-    z-index: 99999999 !important;
+    z-index: 999 !important;
     justify-content: center;
     height: 45%;
     
@@ -402,9 +409,11 @@ form textarea{
 }
 
 .top-btn{
+    opacity: 0;
     position: fixed;
     width: 40px;
     height: 40px;
+    border: 0;
     border-radius: 50%;
     bottom: 10%;
     right: 1%;
@@ -412,15 +421,40 @@ form textarea{
     line-height: 1;
     color: white;
     font-size: 27px;
+    transition-duration: 0.8s;
     filter: drop-shadow(0px 0px 5px #000000);
+    z-index: 9599;
 }
 .footer-btn-hover:hover{
     background-color:#0C65ED !important ;
     transition-duration: 0.5s;
    
 }
+.h-to-v{
+   opacity: 1 !important;
+}
+.v-to-h{
+    visibility: hidden !important;
+    transition-duration: 0.5s;
+}
 .footer-btn-hover:hover a{
     color: white !important;
     transition-duration: 0.3s;
 
+}
+.button-bg-dynamic{
+    width: 30px;
+	height: 50px;
+	transform: skew(-30deg);
+	background: rgba(245, 245, 245, 0.49);
+    top: 0%;
+    left: 105%;
+}
+.button-container:hover .button-bg-dynamic{
+    transform: translateX(-250px) skew(-30deg);
+    transition-duration: 1.8s;
+}
+.button-container:hover {
+    font-size: 105%;
+    transition-duration: 0.5s;
 }

@@ -52,23 +52,22 @@ function looping(startNum , endNum , breakNum , continueNum){
 // console.log(arr);
 // *************************************************************************//
 
-// var users = [
+// var usersArr = [
 
 //     {
-//         fName: '' ,
-        
+//         fName : 'Moahammed' ,
+//         balance: 10000, 
+//         id:1
 //     },
 //     {
-//         fName: 'Nouran' ,
-//         lName: 'Fayez'
+//         fName :'ahmed' ,
+//         balance: 10000, 
+//         id:2
 //     },
 //     {
-//         fName: 'Ahmed' ,
-//         lName: 'Abdelraouf'
-//     },
-//     {
-//         fName: 'Zain' ,
-//         lName: 'Abdelraouf'
+//         fName : 'mahomoud' ,
+//         balance: 10000, 
+//         id:3
 //     }
 
 // ]
@@ -94,6 +93,8 @@ function addUser(name ,  balance , usersArr){
     };
 
     usersArr.push(user);
+
+    showUsers(usersArr);
 }
 
 function updateBalance(userId , newBalance , usersArr){
@@ -120,6 +121,33 @@ function deleteUserByID(userId , usersArr){
         
     });
 }
+
+/* Session 5 */
+const divContainer = document.getElementById("div-container")
+
+const addBtn = document.getElementById()
+
+function showUsers(usersArr){
+    usersArr.forEach((element ,i)=>{
+        let div = document.createElement('tr')
+        let name = document.createElement('td')
+        name.innerText = element.fName
+        let balance = document.createElement('td')
+        balance.innerText = element.balance
+        let id = document.createElement('td')
+        id.innerText = element.id
+        
+        div.appendChild(name)
+        div.appendChild(balance)
+        div.appendChild(id)
+         
+        divContainer.appendChild(div)
+
+    })
+}
+
+
+/**session 5 end */
 // var users = []
 // var n =parseInt(prompt("enter number of users"));
 // //users.findIndex((element)=>)
@@ -183,12 +211,30 @@ function deleteUserByID(userId , usersArr){
 // }
 /************************************************************ */
 
-let listItems = document.getElementsByTagName('li')
-function handleMouseMove(element,flag){
-    for (var i = 0 ; i < listItems.length ;i++)
-    {
-        listItems[i].style.color="black"
-    }
-    element.style.color = "red" ;
+// let listItems = document.getElementsByTagName('li')
+// function handleMouseMove(element,flag){
+//     for (var i = 0 ; i < listItems.length ;i++)
+//     {
+//         listItems[i].style.color="black"
+//     }
+//     element.style.color = "red" ;
     
-}
+// }
+
+// ////////////////////****************************** */
+
+const div = document.getElementById("div-id")
+
+div.addEventListener("scroll" , (e)=>{
+    console.log(e);
+    if (e.target.scrollTop > 200)
+    {
+
+        div.style.backgroundColor ='red';
+    }
+    else if (e.target.scrollTop < 200)
+    {
+
+        div.style.backgroundColor ='aqua';
+    }
+})

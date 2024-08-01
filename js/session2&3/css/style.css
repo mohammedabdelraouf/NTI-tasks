@@ -1,0 +1,22 @@
+#div-id{
+    background-color: aqua;
+    padding: 3%;
+    color: black;
+    width: 30%;
+    margin: auto;
+    height: 200px;
+    overflow: auto;
+}
+
+table{
+    margin: 50px auto ;
+}
+table td , th{
+    padding: 10px 30px;
+    margin:10px;
+    border: 1px solid gray;
+
+}
+tr th{
+    background-color: beige;
+}
